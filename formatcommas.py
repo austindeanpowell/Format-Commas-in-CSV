@@ -9,5 +9,5 @@ df['Records'] = pd.to_numeric(df['Records'], errors='coerce').fillna(0).astype(i
 # Format numbers with commas
 df['Records'] = df['Records'].apply(lambda x: f"{x:,}")
 
-# Save to a new CSV file
-df.to_csv("data-breach_formatted.csv", index=False)
+# Save to a new CSV file updated file different than original
+df.to_csv("databreach_format.csv", index=False)
